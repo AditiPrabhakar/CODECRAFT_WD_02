@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #000000c0;
+    display: flex;
+}
+
+.container {
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.timer {
+    font-size: 76px;
+    font-weight: lighter;
+    color: #fff;
+    width: 410px;
+    margin-left: 20px;
+}
+
+.bottomPart {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns{
+    width: 380px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-between; */
+    gap: 10px;
+}
+
+.btns button {
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btns .toggle {
+    transition: all 0.3s ease;
+    background-color: #508052;
+    z-index: 1;
+}
+
+.btns .toggle:active,
+.btns .reset:active,
+.btns .lap:active {
+    transform: scale(0.9);
+}
+
+.btns .toggle.on {
+    background-color: #d92027;
+}
+
+.btns .reset,
+.btns .lap {
+    transform: all 0.3s ease;
+}
+
+.lap_box {
+    width: 200px;
+    height: 200px;
+    color: #fff;
+    padding-left: 30px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lapItem {
+    width: 120px;
+    height: 30px;
+
+}
